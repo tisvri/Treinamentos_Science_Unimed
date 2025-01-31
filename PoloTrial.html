@@ -18,8 +18,24 @@
             </div>
 
             <div class="menu_video">
-                <h2> Utilize a barra lateral para baixar as aulas.</h2>
+                <h2> Utilize a barra lateral para acessar as aulas.</h2>
             </div>
+
+            <script>
+                function alterarTexto() {
+                  const titulo = document.querySelector(".menu_video h2");
+                  if (window.innerWidth <= 950) {
+                    titulo.textContent = "Utilize a barra abaixo para acessar as aulas.";
+                  } else {
+                    titulo.textContent = "Utilize a barra lateral para acessar as aulas.";
+                  }
+                }
+              
+                // Chama a função ao carregar a página e ao redimensionar a tela
+                window.addEventListener("load", alterarTexto);
+                window.addEventListener("resize", alterarTexto);
+              </script>
+
         </div>
 
 

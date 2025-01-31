@@ -91,5 +91,15 @@ body {
 }
 
 @media screen and (max-width: 950px){
-    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .video-section{
+        margin-right: 0;
+    }
+    .lesson-title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
