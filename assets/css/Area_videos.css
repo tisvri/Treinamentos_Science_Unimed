@@ -89,3 +89,7 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width: 950px){
+    
+}
