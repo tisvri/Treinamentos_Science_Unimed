@@ -9,8 +9,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #d3d3d3;
+            background-color: #cdcecd;
             margin: 0;
+            background-image: linear-gradient(to right,
+                    #cdcecd 0%,
+                    #ffffff 30%,
+                    #ffffff 70%,
+                    #cdcecd 100%);
+            background-image: url("assets/img/Fundo.webp");
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 2rem;
+            justify-content: center;
         }
 
         header {
@@ -35,7 +45,7 @@
         }
 
         .card img {
-            width: 100%;
+            margin-top: 20px;
             height: 200px;
             object-fit: cover;
         }
@@ -43,6 +53,18 @@
         .card h2 {
             font-size: 25px;    
         }
+        .menu_pagina {
+            display: flex;
+            justify-content: center; /* centraliza horizontal */
+            align-items: center;     /* centraliza vertical */
+        }
+
+        .img_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
 
         /* Responsividade */
         @media (max-width: 768px) {
@@ -67,30 +89,30 @@
 
     <div class="container">
         <div class="card">
-            <img src="./assets/img/polo.jpg" >
+            <img src="./assets/img/Sistema de Gestao.png" >
             <h2>Sistema de gestão de centros de pesquisa</h2>
             <button id="BotaoPolo" class="botaoAcesso">Acessar</button>
         </div>
         <div class="card">
-            <img src="./assets/img/Integração de Cursos.jpg" alt="Plataforma CTMS">
+            <img src="./assets/img/CTMS.png" alt="Plataforma CTMS">
             <h2>Plataforma CTMS</h2>
             <button id="BotaoCTMS" class="botaoAcesso">Acessar</button>
         </div>
         <div class="card">
-            <img src="./assets/img/plataforma-brasil-ufj.png" >
+            <img src="./assets/img/Plat Brasil.png" >
             <h2>Plataforma Brasil</h2>
             <button id="BotaoPlataformaBrasil" class="botaoAcesso">Acessar</button>
         </div>
         <div class="card">
-            <img src="./assets/img/IA.jpg" >
+            <img src="./assets/img/Plat IA.png" >
             <h2>Plataforma IA</h2>
             <button id="Plataforma_IA" class="botaoAcesso">Acessar</button>
         </div>
-        <div class="card">
-            <img src="./assets/img/Chamados2.png">
+        <!-- <div class="card">
+            <img src="./assets/img/Portal de Chamados.png">
             <h2>PORTAL DE CHAMADOS</h2>
             <button id="chamados" class="botaoAcesso">Acessar</button>
-        </div>
+        </div> -->
 
     </div>
 
@@ -111,9 +133,9 @@
         document.getElementById('Plataforma_IA').onclick = () => {
             window.location.href = "./Plataforma_IA.html";
         };
-        document.getElementById('chamados').onclick = () => {
-            window.location.href = "./Portal_de_Chamados.html";
-        };
+        // document.getElementById('chamados').onclick = () => {
+        //     window.location.href = "./Portal_de_Chamados.html";
+        // };
     </script>
 </body>
 
