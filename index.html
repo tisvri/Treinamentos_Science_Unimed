@@ -55,8 +55,9 @@
         }
         .menu_pagina {
             display: flex;
-            justify-content: center; /* centraliza horizontal */
-            align-items: center;     /* centraliza vertical */
+            justify-content: center;
+            align-items: center;    
+            border-radius: 8px;
         }
 
         .img_menu {
@@ -108,11 +109,11 @@
             <h2>Plataforma IA</h2>
             <button id="Plataforma_IA" class="botaoAcesso">Acessar</button>
         </div>
-        <!-- <div class="card">
+        <div class="card">
             <img src="./assets/img/Portal de Chamados.png">
             <h2>PORTAL DE CHAMADOS</h2>
             <button id="chamados" class="botaoAcesso">Acessar</button>
-        </div> -->
+        </div>
 
     </div>
 
@@ -133,9 +134,9 @@
         document.getElementById('Plataforma_IA').onclick = () => {
             window.location.href = "./Plataforma_IA.html";
         };
-        // document.getElementById('chamados').onclick = () => {
-        //     window.location.href = "./Portal_de_Chamados.html";
-        // };
+        document.getElementById('chamados').onclick = () => {
+            window.location.href = "./Portal_de_Chamados.html";
+        };
     </script>
 </body>
 
